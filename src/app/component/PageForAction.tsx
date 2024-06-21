@@ -3,7 +3,7 @@
 import { useFormState } from "react-dom";
 import { errorAction } from "../_server_action/error_action";
 import { Suspense, useActionState } from "react";
-import { ErrorBoundary } from "react-error-boundary";
+// import { ErrorBoundary } from "react-error-boundary";
 import { useRouter } from "next/navigation";
 
 export function PageForAction() {
@@ -16,18 +16,18 @@ export function PageForAction() {
       </div>
 
       <Suspense fallback={<div>fallback</div>}>
-        <ErrorBoundary
+        {/* <ErrorBoundary
           fallback={
             <div>
               <h1>Something went wrong</h1>
             </div>
           }
-        >
+        > */}
           <form action={newErrorAction}>
             <button>Submit</button>
           </form>
           <h1>{actionState}</h1>
-        </ErrorBoundary>
+        {/* </ErrorBoundary> */}
       </Suspense>
     </>
   );
