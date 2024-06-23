@@ -11,7 +11,8 @@
   "dependencies": {
     "next": "15.0.0-canary.38",
     "react": "19.0.0-rc.0",
-    "react-dom": "19.0.0-rc.0"
+    "react-dom": "19.0.0-rc.0",
+    "react-error-boundary": "^4.0.13"
   },
   "devDependencies": {
     "@types/node": "^20",

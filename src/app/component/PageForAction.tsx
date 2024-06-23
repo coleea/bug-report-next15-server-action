@@ -16,18 +16,12 @@ export function PageForAction() {
       </div>
 
       <Suspense fallback={<div>fallback</div>}>
-        {/* <ErrorBoundary
-          fallback={
-            <div>
-              <h1>Something went wrong</h1>
-            </div>
-          }
-        > */}
+        
           <form action={newErrorAction}>
             <button>Submit</button>
           </form>
           <h1>{actionState}</h1>
-        {/* </ErrorBoundary> */}
+        
       </Suspense>
     </>
   );
